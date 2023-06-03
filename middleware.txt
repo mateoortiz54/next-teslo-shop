@@ -1,0 +1,45 @@
+// import { NextFetchEvent, NextRequest, NextResponse } from "next/server";
+// import { jwt } from "./utils";
+console.log('Hola mundo')
+
+
+// export async function middleware( req: NextRequest, res: NextFetchEvent){
+
+//     // console.log({reqPathname : req.nextUrl.pathname})
+    
+    
+//     if (req.nextUrl.pathname.startsWith('/checkout/address')) {
+//         const token = req.cookies.get('token')?.value;
+//         console.log('Este es el token:', token)
+    
+//         try {
+//             // const token = req.cookies.get('token')?.value;
+
+//             // console.log('Este es el token:', token)
+//             await jwt.isValidToken(token || '');
+//             console.log('Está en el lado bueno del middleware')
+//             return NextResponse.next();
+//         } catch (error) {
+//             console.log('Está en el lado malo del middleware y este es el error: ', error)
+            
+//             const url = req.nextUrl.clone()
+//             url.pathname = '/auth/login';
+//             url.search = `p=${req.nextUrl.clone().pathname}`
+//             return NextResponse.redirect(url)
+//             // const urlPrew = `/auth/login?p=${req.nextUrl.pathname}`
+//             // return NextResponse.redirect(urlPrew)
+            
+//         }
+
+//     }
+
+
+
+
+
+// }
+
+
+
+// 4.2.1 Next auth
+// tal vez puedan fallar lor argumentos enviados por oauth ya que no se envía el id y _id como de costumbre  
